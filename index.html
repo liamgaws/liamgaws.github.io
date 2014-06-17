@@ -1,5 +1,7 @@
 <html>
 <head>
+<title>Liam Goslett</title>
+
         <style type="text/css">
 
 body{
@@ -47,17 +49,64 @@ padding: 0 10px 0 0;
 
 
 }
+
+p {
+padding: 0 0 1em;
+}
+.msg_list {
+margin: 0px;
+padding: 0px;
+width: 383px;
+}
+.msg_head {
+padding: 5px 10px;
+cursor: pointer;
+position: relative;
+background-color:#FFCCCC;
+margin:1px;
+}
+.msg_body {
+padding: 5px 10px 15px;
+background-color:#F4F4F8;
+}
+
 </style>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+  //hide the all of the element with class msg_body
+  $(".msg_body").hide();
+  //toggle the componenet with class msg_body
+  $(".msg_head").click(function()
+  {
+    $(this).next(".msg_body").slideToggle(600);
+  });
+});
+</script>
+
 </head>
 <body>
 <h1><font color="black"></b>LIAM GOSLETT</b></font></h1>
 
 <h2>
 <a href="http://liamsawthis.com" target="_blank">Blog</a><br>
-<a href="http://twitter.com/liamgaws" target="_blank">Twitter</a><br>
+<a href="http://collections.liamgoslett.com/Clients" target="_blank">Clients</a><br>
+<div class="msg_list">
+<p class="msg_head">Social </p>
+<div class="msg_body">
+<a href="http://twitter.com/liamgaws" target="_blank">Twitter</a> / <a href="http://instagram.com/liamgaws" target="_blank">Instagram</a>
+</div>
+</div>
 <a href="mailto:liam@gaws.fr?subject=ATTN: LIAM GOSLETT">Contact</a><br>
 <a href="http://collections.liamgoslett.com" target="_blank">Portfolio</a><br>
 <a href="/" target="_blank">Prints</a>
+
+
+	
+	
+</h2>
 
 </body>
 </html>
