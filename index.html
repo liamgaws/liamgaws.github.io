@@ -2,6 +2,21 @@
 <head>
 <title>Liam Goslett</title>
 
+<script type="text/javascript" src="http://roshanbh.com.np/examples/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+  $(document).ready(function(){
+$(“.msg_body”).hide();
+$(“.msg_head”).toggle(function(){
+$(this).next(“.msg_body”).slideDown(100);
+}, function(){
+$(this).next(“.msg_body”).slideUp(300);
+});
+});
+</script>
+
+
         <style type="text/css">
 
 body{
@@ -71,20 +86,6 @@ background-color:#FFFFFF;
 }
 
 </style>
-
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-$(document).ready(function()
-{
-  $(document).ready(function(){
-$(“.msg_body”).hide();
-$(“.msg_head”).toggle(function(){
-$(this).next(“.msg_body”).slideDown(100);
-}, function(){
-$(this).next(“.msg_body”).slideUp(300);
-});
-});
-</script>
 
 </head>
 <body>
